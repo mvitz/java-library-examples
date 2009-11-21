@@ -10,6 +10,7 @@
 
     <modules>
         <module>examples-mockito</module>
+        <module>examples-junit</module>
     </modules>
 
     <properties>
