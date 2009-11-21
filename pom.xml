@@ -12,6 +12,7 @@
         <module>examples-mockito</module>
         <module>examples-junit</module>
         <module>examples-spring</module>
+        <module>examples-log4j</module>
     </modules>
 
     <properties>
