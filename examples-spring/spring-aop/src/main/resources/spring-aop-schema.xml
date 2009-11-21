@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+    <bean id="schemaManager" class="de.mvitz.examples.spring.aop.common.DefaultManager" />
+
+    <bean id="schemaAdvice" class="de.mvitz.examples.spring.aop.schema.SchemaAdvice" />
+
+    <aop:config>
+        <aop:aspect ref="schemaAdvice">
+            <aop:pointcut id="doesSomething"
+                expression="execution(void de.mvitz.examples.spring.aop.common.Manager.doSomething())" />
+            <aop:around pointcut-ref="doesSomething" method="logDuration" />
+        </aop:aspect>
+    </aop:config>
+
+</beans>

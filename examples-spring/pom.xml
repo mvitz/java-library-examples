@@ -6,12 +6,17 @@
     <groupId>de.mvitz</groupId>
     <artifactId>examples-spring</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <parent>
         <artifactId>examples</artifactId>
         <groupId>de.mvitz</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
+
+    <modules>
+        <module>spring-aop</module>
+    </modules>
     <!-- /BASIC -->
 
     <!-- INFORMATION -->
