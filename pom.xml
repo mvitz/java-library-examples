@@ -14,6 +14,7 @@
         <module>examples-spring</module>
         <module>examples-log4j</module>
         <module>examples-logback</module>
+        <module>examples-dbunit</module>
     </modules>
 
     <properties>

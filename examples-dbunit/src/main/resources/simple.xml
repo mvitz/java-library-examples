@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dataset SYSTEM "dataset.dtd">
+<dataset>
+    <table name="PERSONS">
+        <column>ID</column>
+        <column>FIRST_NAME</column>
+        <column>LAST_NAME</column>
+        <row>
+            <value>1</value>
+            <value>John</value>
+            <value>Doe</value>
+        </row>
+    </table>
+</dataset>
