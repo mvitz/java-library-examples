@@ -15,6 +15,7 @@
         <module>examples-log4j</module>
         <module>examples-logback</module>
         <module>examples-dbunit</module>
+        <module>examples-guice</module>
     </modules>
 
     <properties>
