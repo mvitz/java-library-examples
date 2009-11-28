@@ -16,6 +16,7 @@
         <module>examples-logback</module>
         <module>examples-dbunit</module>
         <module>examples-guice</module>
+        <module>examples-google-collections</module>
     </modules>
 
     <properties>
