@@ -17,6 +17,7 @@
         <module>examples-dbunit</module>
         <module>examples-guice</module>
         <module>examples-google-collections</module>
+        <module>examples-jsf</module>
     </modules>
 
     <properties>
