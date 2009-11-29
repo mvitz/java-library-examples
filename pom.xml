@@ -19,6 +19,7 @@
     <module>examples-google-collections</module>
     <module>examples-jsf</module>
     <module>examples-java</module>
+    <module>examples-dwr</module>
   </modules>
 
     <properties>
