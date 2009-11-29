@@ -20,6 +20,7 @@
     <module>examples-jsf</module>
     <module>examples-java</module>
     <module>examples-dwr</module>
+    <module>examples-aspectj</module>
   </modules>
 
     <properties>
