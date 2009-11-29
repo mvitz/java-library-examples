@@ -16,6 +16,7 @@
 
     <modules>
         <module>java-reflection</module>
+        <module>java-scripting</module>
     </modules>
     <!-- /BASIC -->
 
