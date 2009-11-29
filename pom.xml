@@ -1,5 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <!-- BASIC -->
@@ -9,16 +9,17 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>examples-mockito</module>
-        <module>examples-junit</module>
-        <module>examples-spring</module>
-        <module>examples-log4j</module>
-        <module>examples-logback</module>
-        <module>examples-dbunit</module>
-        <module>examples-guice</module>
-        <module>examples-google-collections</module>
-        <module>examples-jsf</module>
-    </modules>
+    <module>examples-mockito</module>
+    <module>examples-junit</module>
+    <module>examples-spring</module>
+    <module>examples-log4j</module>
+    <module>examples-logback</module>
+    <module>examples-dbunit</module>
+    <module>examples-guice</module>
+    <module>examples-google-collections</module>
+    <module>examples-jsf</module>
+    <module>examples-java</module>
+  </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
