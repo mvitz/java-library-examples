@@ -5,28 +5,33 @@
     <!-- BASIC -->
     <groupId>de.mvitz</groupId>
     <artifactId>spring-aop</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
+
+    <properties>
+        <spring.version>3.0.0.RELEASE</spring.version>
+        <aspectj.version>1.6.6</aspectj.version>
+    </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aop</artifactId>
-            <version>2.5.6.SEC01</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>2.5.6.SEC01</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjrt</artifactId>
-            <version>1.6.6</version>
+            <version>${aspectj.version}</version>
         </dependency>
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
-            <version>1.6.6</version>
+            <version>${aspectj.version}</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
