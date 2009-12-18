@@ -22,6 +22,7 @@
     <module>examples-dwr</module>
     <module>examples-aspectj</module>
     <module>examples-slf4j</module>
+    <module>examples-xmlunit</module>
   </modules>
 
     <properties>
