@@ -6,7 +6,17 @@
     <groupId>de.mvitz</groupId>
     <artifactId>examples-dwr</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
+
+    <parent>
+        <artifactId>examples</artifactId>
+        <groupId>de.mvitz</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <modules>
+        <module>dwr-basic</module>
+    </modules>
 
     <build>
         <plugins>
@@ -32,12 +42,6 @@
             <scope>runtime</scope>
         </dependency>
     </dependencies>
-
-    <parent>
-        <artifactId>examples</artifactId>
-        <groupId>de.mvitz</groupId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
     <!-- /BASIC -->
 
     <!-- INFORMATION -->
