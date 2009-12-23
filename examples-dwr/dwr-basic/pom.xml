@@ -4,7 +4,7 @@
 
     <!-- BASIC -->
     <groupId>de.mvitz</groupId>
-    <artifactId>examples-dwr-basic</artifactId>
+    <artifactId>dwr-basic</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
 
