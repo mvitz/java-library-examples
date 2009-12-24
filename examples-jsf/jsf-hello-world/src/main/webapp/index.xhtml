@@ -17,8 +17,10 @@
             <h:inputText id="name" value="#{helloWorldBean.name}" />
             <h:messages />
             <h:commandButton action="#{helloWorldController.greet}" value="Greet!" />
+            <h:commandButton action="#{helloWorldController.ajaxGreet}" value="AJAX Greet!" />
         </h:form>
 
+        <p><h:outputText value="#{helloWorldBean.output}" /></p>
     </h:body>
 
 </html>

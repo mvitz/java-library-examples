@@ -14,10 +14,19 @@ public class HelloWorldController {
     }
 
     public String greet() {
+        createGreeting();
+        return "greeting";
+    }
+
+    public String ajaxGreet() {
+        createGreeting();
+        return null;
+    }
+
+    public void createGreeting() {
         String name = helloWorldBean.getName();
         String greeting = "Hello " + name + "!";
         helloWorldBean.setOutput(greeting);
-        return "greeting";
     }
 
 }
