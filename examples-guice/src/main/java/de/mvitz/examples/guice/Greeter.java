@@ -1,18 +1,47 @@
 package de.mvitz.examples.guice;
 
 import com.google.inject.Inject;
+import com.google.inject.name.Named;
 
 public class Greeter {
 
-    private final Greeting greeting;
+    @Inject Greeting defaultGreeting;
+    @Inject @Named("special") Greeting specialGreeting;
+    @Inject @Echo Greeting echoGreeting;
+
+    Greeting secondDefaultGreeting;
+    Greeting secondSpecialGreeting;
+
+    @Inject @Named("foo") String foo;
+    final  String bar;
+    String foobar;
 
     @Inject
-    public Greeter(Greeting greeting) {
-        this.greeting = greeting;
+    public Greeter(@Named("bar") String bar) {
+        this.bar = bar;
     }
 
-    public void greet(String name) {
-        System.out.println(greeting.getGreeting(name));
+    @Inject
+    protected void injectTheFoobar(@Named("foobar") String foobar) {
+        this.foobar = foobar;
+    }
+
+    @Inject
+    protected void injectSecondGreetings(Greeting defaultGreeting, @Named("special") Greeting specialGreeting) {
+        secondDefaultGreeting = defaultGreeting;
+        secondSpecialGreeting = specialGreeting;
+    }
+
+    public String greetDefault(String name) {
+        return defaultGreeting.getGreeting(name);
+    }
+
+    public String greetSpecial(String name) {
+        return specialGreeting.getGreeting(name);
+    }
+
+    public String greetEcho(String name) {
+        return echoGreeting.getGreeting(name);
     }
 
 }
