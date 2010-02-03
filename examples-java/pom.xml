@@ -17,6 +17,7 @@
     <modules>
         <module>java-reflection</module>
         <module>java-scripting</module>
+        <module>examples-java.dsl</module>
     </modules>
     <!-- /BASIC -->
 
