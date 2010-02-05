@@ -4,8 +4,12 @@
 
     <!-- BASIC -->
     <groupId>de.mvitz</groupId>
-    <artifactId>examples-java.dsl</artifactId>
+    <artifactId>examples.java.dsl</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -15,16 +19,20 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <parent>
-        <artifactId>examples-java</artifactId>
-        <groupId>de.mvitz</groupId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
     <!-- /BASIC -->
 
-    <!-- INFORMATION -->
-    <name>examples-java-dsl</name>
-    <!-- /INFORMATION -->
+    <!-- BUILD -->
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <!-- /BUILD -->
 
 </project>

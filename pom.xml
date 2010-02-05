@@ -10,7 +10,6 @@
 
     <modules>
     <module>examples-spring</module>
-    <module>examples-java</module>
   </modules>
 
     <properties>
