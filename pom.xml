@@ -14,7 +14,6 @@
     <module>examples-spring</module>
     <module>examples-log4j</module>
     <module>examples-logback</module>
-    <module>examples-guice</module>
     <module>examples-jsf</module>
     <module>examples-java</module>
     <module>examples-dwr</module>
