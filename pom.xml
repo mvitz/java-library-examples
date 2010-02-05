@@ -2,67 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- BASIC -->
     <groupId>de.mvitz</groupId>
     <artifactId>examples</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-
-    <modules>
-    <module>examples-spring</module>
-  </modules>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-    <!-- /BASIC -->
-
-    <!-- BUILD -->
-    <build>
-        <plugins>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-    <!-- /BUILD -->
-
-    <!-- INFORMATION -->
-    <name>java-library-examples</name>
-    <url>http://code.google.com/p/java-library-examples/</url>
-    <licenses>
-        <license>
-            <name>Apache 2</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-        </license>
-    </licenses>
-    <organization>
-        <name>de.mvitz</name>
-        <url>http://www.mvitz.de</url>
-    </organization>
-    <developers>
-        <developer>
-            <id>mvitz</id>
-            <name>Michael Vitz</name>
-            <email>vitz.michael@gmail.com</email>
-        </developer>
-    </developers>
-    <!-- /INFORMATION -->
-
-    <!-- ENVIRONMENT -->
-    <issueManagement>
-        <system>Google Code</system>
-        <url>http://code.google.com/p/java-library-examples/issues/list</url>
-    </issueManagement>
-    <scm>
-        <connection>scm:svn:http://java-library-examples.googlecode.com/svn/trunk</connection>
-        <developerConnection>scm:svn:https://java-library-examples.googlecode.com/svn/trunk/</developerConnection>
-        <url>http://code.google.com/p/java-library-examples/source/browse/</url>
-    </scm>
-    <!-- /ENVIRONMENT -->
 
 </project>

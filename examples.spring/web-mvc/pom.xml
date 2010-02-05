@@ -4,24 +4,15 @@
 
     <!-- BASIC -->
     <groupId>de.mvitz</groupId>
-    <artifactId>spring-mvc</artifactId>
+    <artifactId>examples.spring.web-mvc</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.version>3.0.0.RELEASE</spring.version>
         <jstl.version>1.1.2</jstl.version>
     </properties>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.mortbay.jetty</groupId>
-                <artifactId>maven-jetty-plugin</artifactId>
-                <version>6.1.22</version>
-            </plugin>
-        </plugins>
-    </build>
 
     <dependencies>
         <dependency>
@@ -40,16 +31,25 @@
             <version>${jstl.version}</version>
         </dependency>
     </dependencies>
-
-    <parent>
-        <artifactId>examples-spring</artifactId>
-        <groupId>de.mvitz</groupId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
     <!-- /BASIC -->
 
-    <!-- INFORMATION -->
-    <name>examples-spring-mvc</name>
-    <!-- /INFORMATION -->
+    <!-- BUILD -->
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>maven-jetty-plugin</artifactId>
+                <version>6.1.22</version>
+            </plugin>
+        </plugins>
+    </build>
+    <!-- /BUILD -->
 
 </project>
