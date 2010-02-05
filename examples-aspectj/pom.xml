@@ -5,7 +5,7 @@
 
     <!-- BASIC -->
     <groupId>de.mvitz</groupId>
-    <artifactId>examples-aspectj</artifactId>
+    <artifactId>examples.aspectj</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <build>
@@ -32,7 +32,7 @@
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjrt</artifactId>
-            <version>1.6.5</version>
+            <version>1.6.7</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -41,16 +41,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <parent>
-        <artifactId>examples</artifactId>
-        <groupId>de.mvitz</groupId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
     <!-- /BASIC -->
-
-    <!-- INFORMATION -->
-    <name>examples-aspectj</name>
-    <!-- /INFORMATION -->
 
 </project>
