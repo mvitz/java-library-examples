@@ -9,7 +9,6 @@
     <packaging>pom</packaging>
 
     <modules>
-    <module>examples-mockito</module>
     <module>examples-spring</module>
     <module>examples-log4j</module>
     <module>examples-logback</module>
