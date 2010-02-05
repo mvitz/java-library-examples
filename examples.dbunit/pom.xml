@@ -4,8 +4,12 @@
 
     <!-- BASIC -->
     <groupId>de.mvitz</groupId>
-    <artifactId>examples-dbunit</artifactId>
+    <artifactId>examples.dbunit</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -45,16 +49,20 @@
             <version>1.2.124</version>
         </dependency>
     </dependencies>
-
-    <parent>
-        <artifactId>examples</artifactId>
-        <groupId>de.mvitz</groupId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
     <!-- /BASIC -->
 
-    <!-- INFORMATION -->
-    <name>examples-dbunit</name>
-    <!-- /INFORMATION -->
+    <!-- BUILD -->
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <!-- /BUILD -->
 
 </project>
