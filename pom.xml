@@ -21,7 +21,6 @@
     <module>examples-java</module>
     <module>examples-dwr</module>
     <module>examples-slf4j</module>
-    <module>examples-xmlunit</module>
   </modules>
 
     <properties>
