@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.junit.rules.MethodRule;
 import org.junit.rules.Timeout;
 
-public class TimeoutRule {
+public class TimeoutRuleTest {
 
     @Rule
     public MethodRule timeout = new Timeout(2000);
