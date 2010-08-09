@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<book>
+    <author>Stephen King</author>
+    <price>
+        <amount>17.25</amount>
+        <currency>EUR</currency>
+    </price>
+    <title>Carrie</title>
+</book>
