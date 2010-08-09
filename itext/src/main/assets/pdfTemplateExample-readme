@@ -1,0 +1,26 @@
+http://blog.codecentric.de/2010/08/pdf-generierung-mit-itext/
+
+PDF-Formulare lassen sich sehr einfach mit OpenOffice  erzeugen. In meinem Beispiel habe ich
+OpenOffice Draw verwendet, der Ansatz funktioniert aber gleicherweise mit OpenOffice Writer oder
+Calc. Im jeweiligem Programm einfach ein neues Dokument anlegen und anschließend nach Belieben mit
+Texten, Farben oder Linien gestalten. Sobald das Layout fertig ist, müssen die Inhaltsfelder
+definiert werden. Dabei ist es hilfreich, wenn die Symbolleisten für Formular-Entwurf und
+Formular-Steuerelemente ausgewählt sind (Ansicht -> Symbolleisten). Mit diesen neuen Icons kann man
+unter anderem den Formular-Entwurfsmodus  aktivieren. Jetzt kann z.B. aus den
+Formular-Steuerelementen ein Textfeld ausgewählt und in das Dokument eingefügt werden. Über einen
+Rechtsklick lassen sich die Eigenschaften des Textfelds definieren. Folgende Einstellungen sind
+interessant:
+
+    * Name : Dieser Name wird später im Java Code zum Befüllen des Feldes referenziert.
+    * Rahmen : Default ist 3D-Look – Normalerweise wird wohl ohne Rahmen besser passen.
+    * Hintergrundfarbe, Ausrichtung, Schrift : Hier kann das Layout bestimmt werden. Layout-Angaben
+      im Java Code sind damit überflüssig.
+    * Text-Typ: Normalerweise einzeilig, möchte man jedoch im Java Code Text mit Umbrüchen einfüllen
+      muss hier mehrzeilig ausgewählt werden.
+
+Sobald die Formular-Felder keinen Rahmen haben, kann man diese im Dokument nicht mehr einfach erkennen.
+Hier hilft der Formular-Navigator.
+
+Nach dem Layout und der Erstellung der Formular-Felder kann das Dokument in eine PDF-Vorlage exportiert
+werden. Die geht mittels Datei –> Exportieren als PDF. Im folgenden Dialog muss PDF-Formular erzeugen
+markiert sein.
