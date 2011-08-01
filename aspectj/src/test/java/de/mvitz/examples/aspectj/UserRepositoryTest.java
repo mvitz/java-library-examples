@@ -23,4 +23,9 @@ public class UserRepositoryTest {
         assertThat(User.findAll(), is(expected));
     }
 
+    @Test(expected = IllegalArgumentException.class)
+    public void testname() throws Exception {
+        throw new IllegalArgumentException("Msg");
+    }
+
 }
