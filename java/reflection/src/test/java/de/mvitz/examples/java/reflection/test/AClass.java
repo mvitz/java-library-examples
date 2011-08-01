@@ -1,4 +1,4 @@
-package de.mvitz.examples.java.reflection;
+package de.mvitz.examples.java.reflection.test;
 
 public class AClass implements AnInterface {
 

@@ -4,6 +4,8 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import de.mvitz.examples.java.reflection.test.AnInterface;
+
 public class ClassForNameTest {
 
     @Test(expected = ClassNotFoundException.class)
