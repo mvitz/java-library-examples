@@ -48,6 +48,7 @@ public class OptionsTest {
 
     @Test
     public void printUsage() throws Exception {
+        // TODO: do assert
         parser.printUsage(System.out);
     }
 
