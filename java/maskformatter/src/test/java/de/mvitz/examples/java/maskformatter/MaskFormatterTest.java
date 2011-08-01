@@ -17,9 +17,6 @@ import org.junit.Test;
  * L = Zeichen nach Character.isLetter(), aber konvertiert in Kleinbuchstaben
  * H = Hexadezimalzeichen (0-9, a-f oder A-F)
  * ‘ = ausmaskierten und nicht interpretierten Bereich
- * 
- * @author mvitz
- *
  */
 public class MaskFormatterTest {
 
