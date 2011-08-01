@@ -25,7 +25,7 @@ import org.junit.Test;
 
 import de.mvitz.examples.dbunit.util.H2DataSource;
 
-public class Main {
+public class DbUnitTest {
 
     private static final String FILE = "simple.xml";
 
