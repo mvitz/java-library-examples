@@ -1,4 +1,4 @@
-package de.mvitz.examples.google.guava;
+package de.mvitz.examples.guava;
 
 import static com.google.common.base.Predicates.and;
 import static com.google.common.base.Predicates.compose;

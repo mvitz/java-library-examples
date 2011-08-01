@@ -1,4 +1,4 @@
-package de.mvitz.examples.google.guava;
+package de.mvitz.examples.guava;
 
 import static com.google.common.collect.Iterables.getOnlyElement;
 import static com.google.common.collect.Lists.newArrayList;

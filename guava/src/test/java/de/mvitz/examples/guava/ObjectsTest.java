@@ -1,4 +1,4 @@
-package de.mvitz.examples.google.guava;
+package de.mvitz.examples.guava;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertFalse;

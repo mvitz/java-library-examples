@@ -1,4 +1,4 @@
-package de.mvitz.examples.google.guava;
+package de.mvitz.examples.guava;
 
 import com.google.common.base.Charsets;
 import com.google.common.io.Files;
