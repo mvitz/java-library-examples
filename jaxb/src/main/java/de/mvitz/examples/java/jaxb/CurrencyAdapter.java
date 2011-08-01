@@ -4,15 +4,16 @@ import java.util.Currency;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
-public class CurrencyAdapter extends XmlAdapter<String, Currency> {
+public final class CurrencyAdapter extends XmlAdapter<String, Currency> {
 
     @Override
-    public String marshal(Currency theCurrency) throws Exception {
-        return theCurrency.toString();
+    public String marshal(Currency currency) throws Exception {
+        return currency.toString();
     }
 
     @Override
-    public Currency unmarshal(String theCurrency) throws Exception {
-        return Currency.getInstance(theCurrency);
+    public Currency unmarshal(String currency) throws Exception {
+        return Currency.getInstance(currency);
     }
+
 }

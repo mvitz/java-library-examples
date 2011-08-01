@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @SuppressWarnings("serial")
 @XmlRootElement
-public class Book implements Serializable {
+public final class Book implements Serializable {
 
     private String title;
     private String author;
@@ -15,34 +15,34 @@ public class Book implements Serializable {
     public Book() {
     }
 
-    public Book(String theTitle, String theAuthor, Price thePrice) {
-        title = theTitle;
-        author = theAuthor;
-        price = thePrice;
+    public Book(String title, String author, Price price) {
+        this.title = title;
+        this.author = author;
+        this.price = price;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public void setTitle(String theTitle) {
-        title = theTitle;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getAuthor() {
         return author;
     }
 
-    public void setAuthor(String theAuthor) {
-        author = theAuthor;
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
     public Price getPrice() {
         return price;
     }
 
-    public void setPrice(Price thePrice) {
-        price = thePrice;
+    public void setPrice(Price price) {
+        this.price = price;
     }
 
     @Override
